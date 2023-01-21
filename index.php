@@ -46,7 +46,7 @@ if (!empty($_POST)) {
 	<link rel="stylesheet" href="simp.css">
 	<title>SIMPLON FORMULAIRE</title>
 </head>
-<body style="background-color: #f9f9f9; font-family: Nunito Sans">
+<body style="background-color: #DBDBDB; font-family: Nunito Sans">
 	<div id="banner">
 		<img src="banner.jpg" width="100%" height="180px">
 	</div>
@@ -87,7 +87,7 @@ if (!empty($_POST)) {
 							}
 						}
 					</style>
-					<a href="simplon.php">liste des participant</a>
+					<a href="simplon.php">liste des participants</a>
 				</div>
 				<?php 
 				//on remet une condition- pour empècher que la notice sur id n'affiche et pour que le méssage s'affiche uniquement après la validation du formulaire

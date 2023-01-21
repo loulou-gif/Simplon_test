@@ -84,7 +84,7 @@ $listes = $printList->fetchall();
 						}
 					}
 				</style>
-				<a href="simplon1.php">retour au formulaire</a>
+				<a href="index.php">retour au formulaire</a>
 			</div>
 		</div>
 	</div>	

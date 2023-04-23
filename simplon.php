@@ -26,20 +26,21 @@ $listes = $printList->fetchall();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="simplon.css">
-    <link rel="stylesheet" href="simp.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
     <title></title>
 </head>
-<body style="background-color: #DBDBDB; font-family: Nunito Sans">
-	<div id="banner">
-		<img src="banner.jpg" width="100%" height="180px">
-	</div>
-	<div id="body">
-		<div id="table">
-			<h1>
-				LISTE DES PARTICIPANTS
+<body class="mt-20">
+    <div class="position-absolute top-0 start-50 translate-middle-x col-8 mt-20">
+	    <h1 class="text-bg-primary text-center text-2xl rounded-4  mb-10">
+				LISTE DES JEUNES DE L'EGLISE
 			</h1>
-			<table>
+		</div>
+	<div id="body" class="border border-2 rounded-4 row g-8 mt-20 col-md-12 position-absolute top-25 start-50 translate-middle-x">
+	    
+		<div id="table" class='col-md-12  px-4 text-2xl text-primary'>
+			<table class="table table-hover table-striped-columns">
 				<thead>
         			<tr>
             			<th id="ID">ID</th>
@@ -61,30 +62,8 @@ $listes = $printList->fetchall();
     				<?php endforeach; ?>
     			</tbody>
 			</table>
-			<div>
-				<style>
-					a{
-						border: 1px solid black;
-						width: 300px;
-						height: 15px;
-						margin: 10px 33% 10px 45%;
-						text-decoration: none;
-						color: white;
-						background-color: blue;
-						border-radius: 2px;
-					}
-					a:hover{
-						color: whithe;
-						background-color: darkblue;
-					}
-					@media (max-width:600px){
-						a{
-							width: 100px;
-							margin: 10px 27%;
-						}
-					}
-				</style>
-				<a href="index.php">retour au formulaire</a>
+			<div class="text-primary mt-20">
+				<a href="index.php"><<< retour au formulaire</a>
 			</div>
 		</div>
 	</div>	
